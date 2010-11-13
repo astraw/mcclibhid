@@ -1,0 +1,32 @@
+#                                               -*- Autoconf -*-
+# Process this file with autoconf to produce a configure script.
+
+AC_PREREQ(2.61)
+AC_INIT(mcclibhid, 1.21, wjasper@tx.ncsu.edu)
+AM_INIT_AUTOMAKE(mcclibhid, 1.21)
+
+# Use libtool
+AC_PROG_LIBTOOL
+
+AC_CONFIG_SRCDIR([pmd.c])
+AC_CONFIG_HEADER([config.h])
+
+# Checks for programs.
+AC_PROG_CC
+
+# Checks for libraries.
+AC_CHECK_LIB([usb], [usb_init])
+AC_CHECK_LIB([hid], [hid_init])
+
+# Checks for header files.
+AC_HEADER_STDC
+AC_CHECK_HEADERS([fcntl.h stdlib.h string.h sys/ioctl.h unistd.h])
+
+# Checks for typedefs, structures, and compiler characteristics.
+AC_C_CONST
+
+# Checks for library functions.
+
+#AC_CONFIG_FILES([Makefile])
+AC_CONFIG_FILES([pkgconfig/libmcclibhid.pc])
+AC_OUTPUT(Makefile)

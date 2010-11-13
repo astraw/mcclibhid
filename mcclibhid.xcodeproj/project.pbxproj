@@ -1,0 +1,360 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA1F54690CE1CFEB00F089B1 /* test-usb1208FS.c in Sources */ = {isa = PBXBuildFile; fileRef = AA1F54680CE1CFEB00F089B1 /* test-usb1208FS.c */; };
+		AA1F54730CE1D05600F089B1 /* libhid.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA3EB1960CE1C7CA00696482 /* libhid.framework */; };
+		AA1F54740CE1D05600F089B1 /* libusb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA3EB19C0CE1C7D600696482 /* libusb.framework */; };
+		AA1F54790CE1D0C900F089B1 /* mcclibhid.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC2EF5B0486A6940098B216 /* mcclibhid.framework */; };
+		AA3EB1970CE1C7CA00696482 /* libhid.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA3EB1960CE1C7CA00696482 /* libhid.framework */; };
+		AA3EB19D0CE1C7D600696482 /* libusb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA3EB19C0CE1C7D600696482 /* libusb.framework */; };
+		AA3EB1A70CE1C81000696482 /* pmd.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3EB1A40CE1C81000696482 /* pmd.c */; };
+		AA3EB1A80CE1C81000696482 /* pmd.h in Headers */ = {isa = PBXBuildFile; fileRef = AA3EB1A50CE1C81000696482 /* pmd.h */; };
+		AA3EB1A90CE1C81000696482 /* usb-1208FS.c in Sources */ = {isa = PBXBuildFile; fileRef = AA3EB1A60CE1C81000696482 /* usb-1208FS.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		32DBCF5E0370ADEE00C91783 /* mcclibhid_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mcclibhid_Prefix.pch; sourceTree = "<group>"; };
+		8DC2EF5A0486A6940098B216 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8DC2EF5B0486A6940098B216 /* mcclibhid.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = mcclibhid.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA1F54620CE1CFAB00F089B1 /* testusb1208FS */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = testusb1208FS; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA1F54680CE1CFEB00F089B1 /* test-usb1208FS.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = "test-usb1208FS.c"; sourceTree = "<group>"; };
+		AA3EB1960CE1C7CA00696482 /* libhid.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = libhid.framework; path = /Library/Frameworks/libhid.framework; sourceTree = "<absolute>"; };
+		AA3EB19C0CE1C7D600696482 /* libusb.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = libusb.framework; path = /Library/Frameworks/libusb.framework; sourceTree = "<absolute>"; };
+		AA3EB1A40CE1C81000696482 /* pmd.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = pmd.c; sourceTree = "<group>"; };
+		AA3EB1A50CE1C81000696482 /* pmd.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = pmd.h; sourceTree = "<group>"; };
+		AA3EB1A60CE1C81000696482 /* usb-1208FS.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = "usb-1208FS.c"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8DC2EF560486A6940098B216 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA3EB1970CE1C7CA00696482 /* libhid.framework in Frameworks */,
+				AA3EB19D0CE1C7D600696482 /* libusb.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA1F54600CE1CFAB00F089B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA1F54730CE1D05600F089B1 /* libhid.framework in Frameworks */,
+				AA1F54740CE1D05600F089B1 /* libusb.framework in Frameworks */,
+				AA1F54790CE1D0C900F089B1 /* mcclibhid.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8DC2EF5B0486A6940098B216 /* mcclibhid.framework */,
+				AA1F54620CE1CFAB00F089B1 /* testusb1208FS */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* mcclibhid */ = {
+			isa = PBXGroup;
+			children = (
+				08FB77AEFE84172EC02AAC07 /* Classes */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
+				089C1665FE841158C02AAC07 /* Resources */,
+				0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */,
+				034768DFFF38A50411DB9C8B /* Products */,
+			);
+			name = mcclibhid;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7B0FEA5585E11CA2CBB /* Linked Frameworks */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		089C1665FE841158C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8DC2EF5A0486A6940098B216 /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		08FB77AEFE84172EC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7B0FEA5585E11CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA3EB19C0CE1C7D600696482 /* libusb.framework */,
+				AA3EB1960CE1C7CA00696482 /* libhid.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		32C88DFF0371C24200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				AA1F54680CE1CFEB00F089B1 /* test-usb1208FS.c */,
+				AA3EB1A40CE1C81000696482 /* pmd.c */,
+				AA3EB1A50CE1C81000696482 /* pmd.h */,
+				AA3EB1A60CE1C81000696482 /* usb-1208FS.c */,
+				32DBCF5E0370ADEE00C91783 /* mcclibhid_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8DC2EF500486A6940098B216 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA3EB1A80CE1C81000696482 /* pmd.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8DC2EF4F0486A6940098B216 /* mcclibhid */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB91AD08733DA50010E9CD /* Build configuration list for PBXNativeTarget "mcclibhid" */;
+			buildPhases = (
+				8DC2EF500486A6940098B216 /* Headers */,
+				8DC2EF520486A6940098B216 /* Resources */,
+				8DC2EF540486A6940098B216 /* Sources */,
+				8DC2EF560486A6940098B216 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = mcclibhid;
+			productInstallPath = "$(HOME)/Library/Frameworks";
+			productName = mcclibhid;
+			productReference = 8DC2EF5B0486A6940098B216 /* mcclibhid.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AA1F54610CE1CFAB00F089B1 /* testusb1208FS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA1F54650CE1CFE600F089B1 /* Build configuration list for PBXNativeTarget "testusb1208FS" */;
+			buildPhases = (
+				AA1F545F0CE1CFAB00F089B1 /* Sources */,
+				AA1F54600CE1CFAB00F089B1 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = testusb1208FS;
+			productName = testusb1208FS;
+			productReference = AA1F54620CE1CFAB00F089B1 /* testusb1208FS */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB91B108733DA50010E9CD /* Build configuration list for PBXProject "mcclibhid" */;
+			hasScannedForEncodings = 1;
+			mainGroup = 0867D691FE84028FC02AAC07 /* mcclibhid */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			targets = (
+				8DC2EF4F0486A6940098B216 /* mcclibhid */,
+				AA1F54610CE1CFAB00F089B1 /* testusb1208FS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8DC2EF520486A6940098B216 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8DC2EF540486A6940098B216 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA3EB1A70CE1C81000696482 /* pmd.c in Sources */,
+				AA3EB1A90CE1C81000696482 /* usb-1208FS.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA1F545F0CE1CFAB00F089B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA1F54690CE1CFEB00F089B1 /* test-usb1208FS.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB91AE08733DA50010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = mcclibhid_Prefix.pch;
+				HEADER_SEARCH_PATHS = (
+					/Library/Frameworks/libhid.framework/Headers,
+					/Library/Frameworks/libusb.framework/Headers,
+				);
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Frameworks";
+				PRODUCT_NAME = mcclibhid;
+				WRAPPER_EXTENSION = framework;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		1DEB91AF08733DA50010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = mcclibhid_Prefix.pch;
+				HEADER_SEARCH_PATHS = (
+					/Library/Frameworks/libhid.framework/Headers,
+					/Library/Frameworks/libusb.framework/Headers,
+				);
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Frameworks";
+				PRODUCT_NAME = mcclibhid;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		1DEB91B208733DA50010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Debug;
+		};
+		1DEB91B308733DA50010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Release;
+		};
+		AA1F54660CE1CFE600F089B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				HEADER_SEARCH_PATHS = (
+					/Library/Frameworks/libhid.framework/Headers,
+					/Library/Frameworks/libusb.framework/Headers,
+				);
+				INSTALL_PATH = "$(HOME)/bin";
+				PREBINDING = NO;
+				PRODUCT_NAME = testusb1208FS;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		AA1F54670CE1CFE600F089B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				HEADER_SEARCH_PATHS = (
+					/Library/Frameworks/libhid.framework/Headers,
+					/Library/Frameworks/libusb.framework/Headers,
+				);
+				INSTALL_PATH = "$(HOME)/bin";
+				PREBINDING = NO;
+				PRODUCT_NAME = testusb1208FS;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB91AD08733DA50010E9CD /* Build configuration list for PBXNativeTarget "mcclibhid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB91AE08733DA50010E9CD /* Debug */,
+				1DEB91AF08733DA50010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB91B108733DA50010E9CD /* Build configuration list for PBXProject "mcclibhid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB91B208733DA50010E9CD /* Debug */,
+				1DEB91B308733DA50010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA1F54650CE1CFE600F089B1 /* Build configuration list for PBXNativeTarget "testusb1208FS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA1F54660CE1CFE600F089B1 /* Debug */,
+				AA1F54670CE1CFE600F089B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}

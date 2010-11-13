@@ -1,0 +1,24 @@
+mcclibhid (1.21-0ads4) gutsy; urgency=low
+
+  * fix broken Makefile
+
+ -- Andrew Straw <strawman@astraw.com>  Mon, 26 Nov 2007 00:00:50 -0800
+
+mcclibhid (1.21-0ads3) gutsy; urgency=low
+
+  * USB1208FS device is placed in "audio" group
+  * don't print messages when doing AInScan
+
+ -- Andrew Straw <strawman@astraw.com>  Sun, 25 Nov 2007 23:28:27 -0800
+
+mcclibhid (1.21-0ads2) gutsy; urgency=low
+
+  * packaging changes for Mac OS X
+
+ -- Andrew Straw <strawman@astraw.com>  Wed, 07 Nov 2007 01:52:17 -0800
+
+mcclibhid (1.21-0ads1) gutsy; urgency=low
+
+  * initial packaging
+
+ -- Andrew Straw <strawman@astraw.com>  Wed, 24 Oct 2007 23:41:11 -0700

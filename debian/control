@@ -1,0 +1,15 @@
+
+Source: mcclibhid
+Maintainer: Andrew Straw <strawman@astraw.com>
+Section: libs
+Priority: optional
+Build-Depends: debhelper (>= 5), libhid-dev, libusb-dev, libtool, autoconf, automake
+Standards-Version: 3.7.2
+
+Package: libmcclibhid
+Section: libs
+Architecture: any
+Depends: ${shlibs:Depends}
+Description: library to access Measurement Computing's USB data acquisition devices
+ This library allows access to Measurement Computing's USB PMD data acquisition
+ devices.

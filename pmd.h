@@ -56,6 +56,21 @@ enum {
 #define  OUTPUT_REPORT     (2 << 8)
 #define  FEATURE_REPORT    (3 << 8)
 
+#ifndef __u8
+#define __u8 unsigned char
+#endif
+
+#ifndef __u16
+#define __u16 unsigned short
+#endif
+
+#ifndef __u32
+#define __u32 unsigned int
+#endif
+
+#ifndef __s16
+#define __s16 signed short
+#endif
 
 /* For the PMD  devices */
 int PMD_SendOutputReport(HIDInterface* hid, __u8 reportID, __u8* vals, int num_vals, int delay);

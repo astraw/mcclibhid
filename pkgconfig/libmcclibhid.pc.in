@@ -1,0 +1,10 @@
+prefix=@prefix@
+exec_prefix=@exec_prefix@
+libdir=@libdir@
+includedir=@includedir@
+
+Name: libmccusbhid
+Description: MCC USB HID access library
+Version: @VERSION@
+Libs: @LIBHID_LIBS@ -L${libdir} -lmcclibhid
+Cflags: @LIBHID_CFLAGS@ -I${includedir}

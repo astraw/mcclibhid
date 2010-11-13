@@ -24,7 +24,9 @@
 #include <sys/ioctl.h>
 #include <sys/types.h>
 #include <sys/stat.h>
+#ifdef __linux
 #include <asm/types.h>
+#endif
 #include <fcntl.h>
 #include <unistd.h>
 #include <errno.h>
@@ -388,7 +390,7 @@ int usbAInScan_USB1208FS(HIDInterface* hid[], __u8 lowchannel, __u8 highchannel,
 	i += 31;
         break;
       }
-      printf("Scan count = %d\tnumber samples left = %d\n", data.scan_index, num_samples);
+      //printf("Scan count = %d\tnumber samples left = %d\n", data.scan_index, num_samples);
     }
   }
 

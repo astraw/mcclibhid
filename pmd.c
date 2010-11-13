@@ -27,7 +27,9 @@
 #include <sys/ioctl.h>
 #include <sys/types.h>
 #include <sys/stat.h>
+#ifdef __linux
 #include <asm/types.h>
+#endif
 #include <fcntl.h>
 #include <unistd.h>
 #include <errno.h>

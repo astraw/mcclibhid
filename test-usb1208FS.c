@@ -26,8 +26,9 @@
 #include <fcntl.h>
 #include <ctype.h>
 #include <sys/types.h>
+#ifdef __linux
 #include <asm/types.h>
-
+#endif
 #include "pmd.h"
 #include "usb-1208FS.h"
 

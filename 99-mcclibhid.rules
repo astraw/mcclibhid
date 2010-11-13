@@ -1,0 +1,3 @@
+#Measurement Computing USB 1208FS device
+SUBSYSTEM=="usb_device", ACTION=="add", SYSFS{idVendor}=="09db",
+SYSFS{idProduct}=="0082", GROUP="audio", MODE="0660"
